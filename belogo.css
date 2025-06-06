@@ -1,0 +1,194 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.tg-login-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tg-login-header {
+    margin-bottom: 30px;
+}
+
+.tg-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.tg-login-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+}
+
+.tg-login-content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.tg-intro-text {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form-group:focus-within {
+    border-color: #2aabee;
+}
+
+.form-control {
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1;
+}
+
+#countryCode {
+    flex-shrink: 0;
+    width: 120px; /* Adjust as needed */
+    border-right: 1px solid #ddd;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.password-field {
+    margin-top: 25px; /* Spacing for the password field */
+    flex-direction: column; /* Stack input and hint */
+    border: none; /* Remove border for the group, input will have it */
+}
+
+.password-field .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.password-field .form-control:focus {
+    border-color: #2aabee;
+}
+
+
+.password-hint {
+    font-size: 13px;
+    color: #999;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #56a7e0; /* Telegram blue */
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #4a98cf;
+}
+
+.tg-login-qr-code {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+.tg-login-qr-code a {
+    color: #56a7e0;
+    text-decoration: none;
+}
+
+.tg-login-qr-code a:hover {
+    text-decoration: underline;
+}
+
+#qrCodeImage {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#qrCodeImage img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.qr-code-instruction {
+    font-size: 14px;
+    color: #888;
+}
+
+.error-message {
+    color: #e04343;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.tg-footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .tg-login-wrapper {
+        margin: 20px;
+        padding: 20px;
+    }
+}
